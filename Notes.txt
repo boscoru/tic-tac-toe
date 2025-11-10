@@ -1,0 +1,15 @@
+
+OBJECTS:
+
+players -> xname, oname, turn
+
+gameBoard -> 3x3 array
+
+
+FUNCTIONS:
+
+initializeGame -> initialize objects
+
+playRound -> take input, update gameBoard, check for winner
+
+announceWinner -> announce winner or stalemate
