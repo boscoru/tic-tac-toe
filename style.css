@@ -20,6 +20,7 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  background-color: rgb(0, 0, 60);
 }
 
 /* 6. Improve media defaults */
@@ -51,4 +52,90 @@ h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+}
+
+#content {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: beige;
+  text-align: center;
+  font-size: 4rem;
+}
+
+#names {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 2rem;
+}
+
+.player {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  justify-content: center;
+}
+
+.player > button {
+  appearance: none;
+  background: none;
+  border: none;
+  color: beige;
+}
+
+.player > div {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#markerX {
+  background-color: beige;
+}
+
+#markerO {
+  background-color: rgb(0, 0, 60);
+}
+
+#content > button {
+  appearance: none;
+  border: none;
+  color: rgb(0, 0, 60);
+  background-color: beige;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+#gameboard {
+  height: 400px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: beige;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 5px;
+}
+
+.spot {
+  background-color: rgb(0, 0, 60);
+  text-align: center;
+  line-height: 130px;
+  color: beige;
+  font-size: 6rem;
+}
+
+#message {
+  height: 48px;
+  color: beige;
+  font-size: 2rem;
+  margin: 24px;
 }
