@@ -19,6 +19,26 @@
                 <div id="markerO"></div>
             </div>    
         </div>
+        <dialog id="changeX">
+            <button>&times</button>
+            <div>Enter new name for Player X (Limit 15 characters):</div>
+            <form id="formX">
+                <div class="nameInput">
+                    <input type="text" id="playerX" name="playerX" maxlength="15" required autofocus>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </dialog>
+        <dialog id="changeO">
+            <button>&times</button>
+            <div>Enter new name for Player O (Limit 15 characters):</div>
+            <form id="formO">
+                <div class="nameInput">
+                    <input type="text" id="playerO" name="playerO" maxlength="15" required autofocus>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </dialog>
         <div id="gameboard">
             <div id="0" class="spot"></div>
             <div id="1" class="spot"></div>
