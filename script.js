@@ -134,7 +134,7 @@ function showWinner(position) {
         case 8:
             line.style.top = '50%';
             line.style.left = '50%';
-            line.style.transform = 'translate(-50%, -50%) rotate(45deg)';
+            line.style.transform = 'translate(-50%, -50%) rotate(135deg)';
             line.style.width = '530px';
             break;
     }
